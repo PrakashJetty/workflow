@@ -3,10 +3,28 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.jetty.workflow</groupId>
-    <artifactId>jetty-workflow</artifactId>
+    <name>workflow</name>
+    <parent>
+        <groupId>com.recruitment.solution</groupId>
+        <artifactId>recruitmentsimplify</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <artifactId>workflow</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-
+    
 </project>
